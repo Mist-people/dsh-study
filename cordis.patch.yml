@@ -1,0 +1,5 @@
+# Study mode bundle: one Host row serving the vendored PDF.js runtime and the
+# upload endpoint, and the matching browser half that renders the reading panel.
+- insert:
+    - id: study-mode
+      name: 'dsh-study'
