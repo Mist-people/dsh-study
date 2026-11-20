@@ -6,6 +6,12 @@
 
 ---
 
+## English summary
+
+A DSH web bundle that adds a **study mode**: a right-sidebar PDF reader (vendored PDF.js) with a selectable text layer, drag-to-capture into the conversation composer, "add selection to chat", remembered reading position per file, and a start page that opens PDF / Markdown / Word / PowerPoint files either from the system file dialog or from the workspace. Install the repository directory as a DSH profile bundle (`plugin_manager` `install_bundle`, or Settings → Plugins → add local package), then reload the page. Markdown/Word/PowerPoint render through DSH's built-in previews; capture and selection actions apply to PDFs.
+
+---
+
 ## 功能
 
 - **右侧边栏阅读面板**：整份 PDF 由插件自带的 PDF.js 渲染，支持页码跳转、缩放、适应宽度、大文档按页虚拟化。
@@ -89,9 +95,3 @@ dsh-study/
 - [PDF.js](https://github.com/mozilla/pdf.js) `pdfjs-dist@6.3.289`：Apache-2.0，许可见 `vendor/pdfjs/LICENSE`；其中的 wasm 解码器、标准字体、cMap 各自附带许可证文件（`vendor/pdfjs/wasm/LICENSE_*`、`vendor/pdfjs/standard_fonts/LICENSE_*`）。
 
 本插件代码以 MIT 许可发布，见 `LICENSE`。
-
----
-
-## English summary
-
-A DSH web bundle that adds a **study mode**: a right-sidebar PDF reader (vendored PDF.js) with a selectable text layer, drag-to-capture into the conversation composer, "add selection to chat", remembered reading position per file, and a start page that opens PDF / Markdown / Word / PowerPoint files either from the system file dialog or from the workspace. Install the repository directory as a DSH profile bundle (`plugin_manager` `install_bundle`, or Settings → Plugins → add local package), then reload the page. Markdown/Word/PowerPoint render through DSH's built-in previews; capture and selection actions apply to PDFs.
